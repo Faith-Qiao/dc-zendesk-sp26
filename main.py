@@ -2,7 +2,6 @@ import re
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from datasets import load_dataset
 from prompts import PROMPT_1
-# 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 
 ds = load_dataset("jackhhao/jailbreak-classification")
 
 def evalulate(model: AutoModelForCausalLM, tokenizer: AutoTokenizer, system_prompt: str, batch_size: int, max_size: int):
